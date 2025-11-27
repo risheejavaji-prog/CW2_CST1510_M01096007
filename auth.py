@@ -1,15 +1,21 @@
+#step1:importing bcrypt  
 import bcrypt
 import os
 
+#step6: creating a user.txt file 
 USER_FILE = "users.txt"
+
 # -----------------------------
 # PASSWORD SECURITY (bcrypt)
 # -----------------------------
+#step2:Implement the Password Hashing Function
 def hash_password(password):
     password_bytes = password.encode("utf-8")
     salt = bcrypt.gensalt()
     hashed = bcrypt.hashpw(password_bytes, salt)
     return hashed.decode("utf-8")
+
+#Step 3: Implement the Password Verification Function
 def verify_password(password, hashed_password):
     password_bytes = password.encode("utf-8")
     hashed_bytes = hashed_password.encode("utf-8")
@@ -18,6 +24,8 @@ def verify_password(password, hashed_password):
 # -----------------------------
 # USER VALIDATION
 # -----------------------------
+#Step 4: Implement the Password Verification Function
+
 def validate_username(username):
     if username.strip() == "":
         return False, "Username cannot be empty."
@@ -36,6 +44,8 @@ def validate_password(password):
 # -----------------------------
 # USER REGISTRATION
 # -----------------------------
+#step 5: Implement the Registration Function
+
 def user_exists(username):
     if not os.path.exists(USER_FILE):
         return False
@@ -49,7 +59,7 @@ def user_exists(username):
                 return True
     return False
 
-
+#Step 6:  Implement the User Existence Check
 def register_user(username, password):
     if user_exists(username):
         return "Error: User already exists."
@@ -60,9 +70,11 @@ def register_user(username, password):
         file.write(f"{username}:{hashed_pw}\n")
 
     return f"Success: User '{username}' registered successfully!"
+
 # -----------------------------
 # USER LOGIN
 # -----------------------------
+#Step 7: Implement the Login Function
 def login_user(username, password):
     if not os.path.exists(USER_FILE):
         return "Error: No users registered yet."
@@ -85,6 +97,7 @@ def login_user(username, password):
 # -----------------------------
 # MENU AND MAIN LOOP
 # -----------------------------
+#step 8 : displaying menu 
 def display_menu():
     print("\n" + "=" * 50)
     print(" MULTI-DOMAIN INTELLIGENCE PLATFORM")
