@@ -1,7 +1,9 @@
 ## Week 9: Streamlit Dashboard & Data Visualization
 
 Student Name: PARNIKA JAVAJI 
+
 Student ID: M01096007
+
 Course: CST1510 - CW2 - Multi-Domain Intelligence Platform
 
 ## Project Description
