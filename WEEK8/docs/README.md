@@ -1,12 +1,16 @@
 ## Week 8: Data Pipeline & CRUD (SQL)
 Student Name: [PARNIKA JAVAJI]
+
 Student ID: [M01096007]
+
 Course: CST1510 - CW2 - Multi-Domain Intelligence Platform
 
 ## Project Description
+
 Transitioned from file-based storage (users.txt) to a professional database system using SQLite. This project implements a robust database layer to efficiently store, retrieve, update, and delete data for multiple domains.
 
 ## Features
+
 -Migrated Week-7 users from users.txt to SQLite database
 
 -Created database tables for three domains: cyber_incidents, datasets_metadata, it_tickets
