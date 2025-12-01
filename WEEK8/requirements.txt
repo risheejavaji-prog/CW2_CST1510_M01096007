@@ -1,0 +1,5 @@
+required libary are:
+pandas
+streamlit
+bcrypt
+sqlite3

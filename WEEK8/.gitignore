@@ -1,0 +1,32 @@
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Database file
+DATA/database.db
+
+# CSV data files (optional: if you don't want to track them)
+# DATA/*.csv
+
+# Environment variables
+.env
+
+# IDE/editor settings
+.vscode/
+*.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
